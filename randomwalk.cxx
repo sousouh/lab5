@@ -56,7 +56,9 @@ int main(void){
     }
     
     stat.close();			// close statistics file
-    delete[] rx,ry,c;			// delete dynamically allocated arrays
+    delete[] rx;
+    delete[] ry;
+    delete[] c;				// delete dynamically allocated arrays
     return 0;
 }
 
